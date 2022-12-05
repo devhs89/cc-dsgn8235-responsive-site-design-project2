@@ -1,0 +1,4 @@
+# Ignore the following files & folders
+**/.idea
+**/.vscode
+**/node_modules
