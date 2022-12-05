@@ -1,0 +1,30 @@
+/*
+CREATED BY:
+          - Shruti Devani
+          - Pratharan Sai Rupak Reddy Gondi
+          - Keyur Mansukhbhai Kanani
+          - Harpreet Singh
+          - Vinay Kumar Reddy Janumpally
+VERSION: 0.1
+*/
+
+/* Mobile View */
+.container {
+  max-width: 100% !important;
+}
+
+
+/* Tablet View */
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px !important;
+  }
+}
+
+
+/* Desktop View */
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px !important;
+  }
+}
