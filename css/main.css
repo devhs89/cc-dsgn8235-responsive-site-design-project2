@@ -37,6 +37,92 @@ html, body {
   max-width: 100% !important;
 }
 
+.containerFluid {
+  display: flex;
+  flex-wrap: inherit;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.75rem;
+}
+
+.bgPrimary {
+  background-color: var(--primary-shade);;
+}
+
+.brandName {
+  font-family: "NerkoOne", sans-serif;
+  color: var(--white-shade);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  line-height: 1;
+}
+
+.shadow {
+  box-shadow: 0 0.0625rem 0.8rem var(--dark-shade) !important;
+}
+
+.navBar {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+}
+
+.navBarToggler {
+  line-height: 1;
+  background-color: transparent;
+  border: none;
+}
+
+.navBarTogglerIcon {
+  --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3.5' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  background-image: var(--bs-navbar-toggler-icon-bg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.navLinksContainer {
+  width: 100%;
+}
+
+.navLinksList {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  width: 100%;
+}
+
+.navLinksList .navListItem {
+  padding: 0.5rem 1rem;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  border-bottom: 1px solid var(--white-shade);
+}
+
+.navLinksList .navListItem a {
+  text-decoration: none;
+  color: var(--white-shade);
+}
+
+.navLinksList .navListItem:hover {
+  font-weight: 600;
+  background-color: var(--primary-dark-shade);
+}
 
 /*!
  * Tablet View
