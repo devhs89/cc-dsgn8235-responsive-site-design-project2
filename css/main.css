@@ -1,20 +1,36 @@
-/*
-CREATED BY:
-          - Shruti Devani
-          - Pratharan Sai Rupak Reddy Gondi
-          - Keyur Mansukhbhai Kanani
-          - Harpreet Singh
-          - Vinay Kumar Reddy Janumpally
-VERSION: 0.1
-*/
+/*!
+ * CREATED BY:
+ *     - Shruti Devani
+ *     - Pratharan Sai Rupak Reddy Gondi
+ *     - Keyur Mansukhbhai Kanani
+ *     - Harpreet Singh
+ *     - Vinay Kumar Reddy Janumpally
+ * VERSION: 0.1
+ */
 
-/* Mobile View */
+/*!
+ * Mobile View
+ */
+:root {
+  --primary-shade: #3aafa9;
+  --primary-strong-shade: #2b7a78;
+  --primary-light-shade: #def2f1;
+  --dark-shade: #17252a;
+  --white-shade: #feffff
+}
+
+html, body {
+  font-family: 'Montserrat', sans-serif;
+}
+
 .container {
   max-width: 100% !important;
 }
 
 
-/* Tablet View */
+/*!
+ * Tablet View
+ */
 @media (min-width: 768px) {
   .container {
     max-width: 720px !important;
@@ -22,7 +38,9 @@ VERSION: 0.1
 }
 
 
-/* Desktop View */
+/*!
+ * Desktop View
+ */
 @media (min-width: 992px) {
   .container {
     max-width: 960px !important;
