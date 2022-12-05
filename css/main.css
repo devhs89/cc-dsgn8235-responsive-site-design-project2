@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
  * CREATED BY:
  *     - Shruti Devani
@@ -13,14 +14,23 @@
  */
 :root {
   --primary-shade: #3aafa9;
-  --primary-strong-shade: #2b7a78;
+  --primary-dark-shade: #2b7a78;
   --primary-light-shade: #def2f1;
   --dark-shade: #17252a;
   --white-shade: #feffff
 }
 
+@font-face {
+  font-family: "NerkoOne";
+  src: url("/fonts/nerko-one/nerko-one-regular.woff") format("woff");
+  src: url("/fonts/nerko-one/nerko-one-regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 html, body {
   font-family: 'Montserrat', sans-serif;
+  margin: 0;
 }
 
 .container {
