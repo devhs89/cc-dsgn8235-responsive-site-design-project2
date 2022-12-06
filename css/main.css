@@ -495,6 +495,11 @@ h1, h2, h3, h4, h5, h6 {
   background-color: var(--primary-dark-shade);
 }
 
+.pageTittleHeading {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
 /*!
  * Tablet Classes/Overrides
  */
