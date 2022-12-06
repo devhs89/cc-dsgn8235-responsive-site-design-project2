@@ -39,6 +39,8 @@ html, body {
 
 .container {
   max-width: 100% !important;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 
 .containerFluid {
