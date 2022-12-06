@@ -42,6 +42,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
 }
 
+/*Container Classes*/
 .container {
   max-width: 100% !important;
   padding-left: 0.75rem;
@@ -60,6 +61,7 @@ h1, h2, h3, h4, h5, h6 {
   padding-right: 0.75rem;
 }
 
+/*Margin Classes*/
 .m-0 {
   margin: 0;
 }
@@ -305,6 +307,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-right: 3rem;
 }
 
+/*Padding Classes*/
 .p-0 {
   padding: 0;
 }
@@ -515,10 +518,53 @@ h1, h2, h3, h4, h5, h6 {
   padding-right: 3rem;
 }
 
+/*Text Classes*/
+.text-primary {
+  color: var(--primary-shade);
+}
+
+.text-primary-dark {
+  color: var(--primary-dark-shade);
+}
+
+.text-primary-light {
+  color: var(--primary-light-shade);
+}
+
+.text-dark {
+  color: var(--dark-shade);
+}
+
+.text-light {
+  color: var(--white-shade);
+}
+
 .text-decoration-none {
   text-decoration: none;
 }
 
+/*Background Classes*/
+.bg-primary {
+  background-color: var(--primary-shade);
+}
+
+.bg-primary-dark {
+  background-color: var(--primary-dark-shade);
+}
+
+.bg-primary-light {
+  background-color: var(--primary-light-shade);
+}
+
+.bg-dark {
+  background-color: var(--dark-shade);
+}
+
+.bg-light {
+  background-color: var(--white-shade);
+}
+
+/*List Classes*/
 .list-style-none {
   list-style-type: none;
 }
