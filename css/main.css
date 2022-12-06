@@ -569,6 +569,31 @@ h1, h2, h3, h4, h5, h6 {
   background-color: var(--white-shade);
 }
 
+/*Link Classes*/
+.link-primary, .link-primary:visited {
+  color: var(--primary-shade);
+}
+
+.link-primary:hover, .link-primary:active {
+  color: var(--primary-light-shade);
+}
+
+.link-dark, .link-dark:visited {
+  color: var(--dark-shade);
+}
+
+.link-dark:hover, .link-dark:active {
+  color: var(--dark-light-shade);
+}
+
+.link-light, .link-light:visited {
+  color: var(--white-shade);
+}
+
+.link-light:hover, .link-light:active {
+  color: var(--grey-shade);
+}
+
 /*List Classes*/
 .list-style-none {
   list-style-type: none;
