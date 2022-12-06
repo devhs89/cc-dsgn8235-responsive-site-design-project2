@@ -48,7 +48,7 @@ h1, h2, h3, h4, h5, h6 {
   padding-right: 0.75rem;
 }
 
-.containerFluid {
+.container-fluid {
   display: flex;
   flex-wrap: inherit;
   justify-content: space-between;
