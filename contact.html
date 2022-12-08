@@ -48,22 +48,24 @@ VERSION: 0.1
     <h1 class="pageTittleHeading mb-4">Contact Us</h1>
     <hr class="mb-4">
     <div class="contactFormContainer mb-5">
+      <div class="mb-3"><small>All fields are required</small></div>
       <form action="contact.html" method="post">
         <div class="mb-3">
-          <label for="clientName" class="form-label">Full Name</label>
-          <input type="text" name="clientName" id="clientName" class="form-control">
+          <label for="clientName" class="form-label">Full Name *</label>
+          <input type="text" name="clientName" id="clientName" class="form-control" pattern="[A-Za-z0-9]+" required>
         </div>
         <div class="mb-3">
-          <label for="clientEmail" class="form-label">Email</label>
-          <input type="email" name="clientEmail" id="clientEmail" class="form-control">
+          <label for="clientEmail" class="form-label">Email *</label>
+          <input type="email" name="clientEmail" id="clientEmail" class="form-control" required>
         </div>
         <div class="mb-3">
-          <label for="clientSubject" class="form-label">Subject</label>
-          <input type="text" name="clientSubject" id="clientSubject" class="form-control">
+          <label for="clientSubject" class="form-label">Subject *</label>
+          <input type="text" name="clientSubject" id="clientSubject" class="form-control" required>
         </div>
         <div class="mb-3">
-          <label for="clientMessage" class="form-label">Message</label>
-          <textarea name="clientMessage" id="clientMessage" class="form-control textarea-form-control"></textarea>
+          <label for="clientMessage" class="form-label">Message *</label>
+          <textarea name="clientMessage" id="clientMessage" class="form-control textarea-form-control"
+                    required></textarea>
         </div>
         <button type="submit" class="btn btn-primary">Send</button>
       </form>
