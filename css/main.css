@@ -113,6 +113,16 @@
 /*!
  * Margin Classes
  */
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 .m-0 {
   margin: 0;
 }
@@ -138,7 +148,7 @@
 }
 
 .m-6 {
-  margin: 3rem;
+  margin: 5rem;
 }
 
 .mx-0 {
@@ -172,8 +182,8 @@
 }
 
 .mx-6 {
-  margin-left: 3rem;
-  margin-right: 3rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
 }
 
 .my-0 {
@@ -207,8 +217,8 @@
 }
 
 .my-6 {
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
 }
 
 .my-0 {
@@ -242,8 +252,8 @@
 }
 
 .my-6 {
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
 }
 
 .mt-0 {
@@ -271,7 +281,7 @@
 }
 
 .mt-6 {
-  margin-top: 3rem;
+  margin-top: 5rem;
 }
 
 .mb-0 {
@@ -299,7 +309,7 @@
 }
 
 .mb-6 {
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
 }
 
 .ml-0 {
@@ -327,7 +337,7 @@
 }
 
 .ml-6 {
-  margin-left: 3rem;
+  margin-left: 5rem;
 }
 
 .mr-0 {
@@ -355,7 +365,7 @@
 }
 
 .mr-6 {
-  margin-right: 3rem;
+  margin-right: 5rem;
 }
 
 /*!
@@ -386,7 +396,7 @@
 }
 
 .p-6 {
-  padding: 3rem;
+  padding: 5rem;
 }
 
 .px-0 {
@@ -420,8 +430,8 @@
 }
 
 .px-6 {
-  padding-left: 3rem;
-  padding-right: 3rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 
 .py-0 {
@@ -455,8 +465,8 @@
 }
 
 .py-6 {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .pt-0 {
@@ -484,7 +494,7 @@
 }
 
 .pt-6 {
-  padding-top: 3rem;
+  padding-top: 5rem;
 }
 
 .pb-0 {
@@ -512,7 +522,7 @@
 }
 
 .pb-6 {
-  padding-bottom: 3rem;
+  padding-bottom: 5rem;
 }
 
 .pl-0 {
@@ -540,7 +550,7 @@
 }
 
 .pl-6 {
-  padding-left: 3rem;
+  padding-left: 5rem;
 }
 
 .pr-0 {
@@ -568,7 +578,7 @@
 }
 
 .pr-6 {
-  padding-right: 3rem;
+  padding-right: 5rem;
 }
 
 /*!
@@ -939,13 +949,13 @@ a {
   text-decoration: none;
 }
 
-.brandName {
+.brand-name {
   font-family: "NerkoOne", sans-serif;
   color: var(--grey-light-shade);
   text-decoration: none;
   text-transform: uppercase;
   font-size: 1.8rem;
-  line-height: 1;
+  line-height: 1.4;
 }
 
 .shadow {
@@ -962,13 +972,13 @@ a {
   border-radius: 0 0 0.3rem 0.3rem;
 }
 
-.navBarToggler {
+.navbar-toggler {
   line-height: 1;
   background-color: transparent;
   border: none;
 }
 
-.navBarTogglerIcon {
+.navbar-toggler-icon {
   display: inline-block;
   width: 1.5em;
   height: 1.5em;
