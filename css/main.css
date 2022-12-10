@@ -75,8 +75,9 @@
   display: block;
   background-repeat: no-repeat;
   background-position: center;
-  width: 1rem;
-  height: 1rem;
+  width: 0.9rem;
+  height: 0.9rem;
+  margin-top: 0.12rem;
 }
 
 .location-icon {
@@ -824,7 +825,7 @@
 }
 
 .link-dark:hover, .link-dark:active {
-  color: var(--grey-600);
+  color: var(--primary-shade);
 }
 
 .link-light, .link-light:visited {
@@ -833,6 +834,14 @@
 
 .link-light:hover, .link-light:active {
   color: var(--grey-400);
+}
+
+.link-credits, .link-credits:visited {
+  color: var(--grey-400);
+}
+
+.link-credits:hover, .link-credits:active {
+  color: var(--grey-500);
 }
 
 /*!
@@ -892,7 +901,7 @@
   border: none;
 }
 
-.btn-primary:hover, .btn-accent:active {
+.btn-primary:hover, .btn-primary:active {
   background-color: var(--primary-dark-shade);
   box-shadow: 0 0 0 0.15rem var(--primary-light-shade);
 }
@@ -956,6 +965,12 @@ a {
   text-transform: uppercase;
   font-size: 1.8rem;
   line-height: 1.4;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.brand-name:hover, .brand-name:active {
+  text-shadow: 0.1rem 0.1rem 0.5rem var(--accent-dark-shade);
 }
 
 .shadow {
@@ -968,7 +983,7 @@ a {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5rem 0 0.1rem 0;
+  padding: 0.5rem 0;
   border-radius: 0 0 0.3rem 0.3rem;
 }
 
@@ -987,6 +1002,10 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
+}
+
+.nav-links-list-container {
+  width: 100%;
 }
 
 .nav-links-list {
@@ -1018,6 +1037,7 @@ a {
 .nav-links-list .nav-list-item:hover {
   font-weight: 600;
   background-color: var(--primary-dark-shade);
+  border-radius: 0.3rem;
 }
 
 .pageTittleHeading {
@@ -1065,10 +1085,6 @@ a {
     border-bottom: none;
   }
 
-  .nav-links-list .nav-list-item:hover {
-    border-bottom: 1px solid var(--grey-light-shade);
-  }
-
   .footer-links-list {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
@@ -1081,5 +1097,30 @@ a {
 @media (min-width: 992px) {
   .container {
     max-width: 960px !important;
+  }
+
+  .row {
+    justify-content: space-between;
+  }
+
+  .col-lg {
+    flex: 0 0 auto;
+    width: 49%;
+  }
+
+  .brand-name {
+    margin: 0;
+  }
+
+  .nav-links-list-container {
+    width: auto;
+  }
+
+  .nav-links-list .nav-list-item {
+    width: fit-content;
+  }
+
+  .btn {
+    padding: 0.5rem 3rem;
   }
 }

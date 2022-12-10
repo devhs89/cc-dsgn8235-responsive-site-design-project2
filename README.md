@@ -38,7 +38,7 @@
 - URLs for graphics from internet must be provided (as comments in source code)
 - Syntax error any other mistake
 
-##### Disclaimer
+##### Credits
 
 1. The UI and concept is inspired by [Pixabay](https://pixabay.com/).
 2. The CSS styling is inspired by & follows [Bootstrap](https://getbootstrap.com/) naming conventions.
