@@ -1039,7 +1039,7 @@ a {
 
 .footer-links-list {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 0.3rem;
   list-style: none;
   text-align: center;
@@ -1053,6 +1053,24 @@ a {
 @media (min-width: 768px) {
   .container {
     max-width: 720px !important;
+  }
+
+  .nav-links-list {
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+  }
+
+  .nav-links-list .nav-list-item {
+    border-bottom: none;
+  }
+
+  .nav-links-list .nav-list-item:hover {
+    border-bottom: 1px solid var(--grey-light-shade);
+  }
+
+  .footer-links-list {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
 }
 
