@@ -1109,6 +1109,10 @@ a {
     width: 49%;
   }
 
+  .col-pwd{
+    /* flex: 0 0 auto; */
+    width: 49%;
+  }
   .brand-name {
     margin: 0;
   }
