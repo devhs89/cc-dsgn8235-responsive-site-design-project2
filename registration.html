@@ -1,6 +1,6 @@
 <!--
 CREATED BY: Vinay Kumar Reddy Janumpally
-VERSION: 0.1
+VERSION: 0.2
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -34,7 +34,7 @@ VERSION: 0.1
           <a href="contact.html" class="nav-link">Contact</a>
         </li>
         <li class="nav-list-item">
-          <a href="account.html" class="nav-link">Sign In</a>
+          <a href="account.html" class="nav-link">Account</a>
         </li>
       </ul>
     </div>
@@ -44,27 +44,32 @@ VERSION: 0.1
 <main>
   <div class="container my-6">
     <h1 class="pageTittleHeading mb-4">Registration</h1>
-    <small>&#40; If you already registred <a href="account.html">Click Here</a> &#41;</small>
+    <small>&#40; Already have an account? <a href="account.html" class="link-primary">Click here</a> to sign
+      in.&#41;</small>
     <hr class="mb-4">
     <!--Add Content Here-->
     <div class="mb-6 contactFormContainer">
       <!-- <div class="mb-3 col"><h1>Registration</h1></div> -->
       <form action="contact.html" method="post" class="row">
         <div class="mb-3 col col-lg">
-          <label for="clientName" class="form-label">User Name *</label>
-          <input type="text" name="clientName" id="clientName" class="form-control" pattern="[A-Za-z0-9]+" required>
+          <label for="clientName" class="form-label">Full Name *</label>
+          <input type="text" name="clientName" id="clientName" class="form-control" placeholder="e.g. Mark Smith"
+                 pattern="[A-Za-z]+" required>
         </div>
         <div class="mb-3 col col-lg">
           <label for="clientEmail" class="form-label">Email *</label>
-          <input type="email" name="clientEmail" id="clientEmail" class="form-control" required>
+          <input type="email" name="clientEmail" id="clientEmail" class="form-control" placeholder="e.g. name@gmail.com"
+                 required>
         </div>
         <div class="mb-3 col">
-          <label for="clientSubject" class="form-label">Enter Password *</label>
-          <input type="password" name="clientSubject" id="clientSubject" class="form-control" required>
+          <label for="clientPassWord" class="form-label">Enter Password *</label>
+          <input type="password" name="clientPassWord" id="clientPassWord" class="form-control"
+                 pattern="[A-Za-z0-9\$\-\_\*\@]{8,}" placeholder="A-Z a-z 0-9 $-_*@ and at least 8 chars long" required>
         </div>
         <div class="mb-3 col">
-          <label for="clientMessage" class="form-label">ReEnter the Password *</label>
-          <input type="text" name="clientSubject" id="clientSubject" class="form-control" required>
+          <label for="clientRepeatPassWord" class="form-label">Repeat Password *</label>
+          <input type="text" name="clientRepeatPassWord" id="clientRepeatPassWord" class="form-control"
+                 pattern="[A-Za-z0-9\$\-\_\*\@]{8,}" placeholder="Must match password" required>
         </div>
         <div class="w-100">
           <button type="submit" class="btn btn-primary">Register</button>
