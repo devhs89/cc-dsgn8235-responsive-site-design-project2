@@ -959,6 +959,73 @@ h3 {
   color: #71767a;
 }
 
+.showmore {
+  font-weight: 600;
+  font-size: 14px;
+  margin-top: 25px;
+  margin-right: 10px;
+  color: #191b26;
+  float: right;
+}
+
+.show-more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.forum-gallary {
+  display: flex;
+  margin: 0 -20px 20px 0;
+  flex-wrap: wrap;
+}
+
+.single-gallary {
+  flex: 1;
+  margin: 0 20px 10px 0;
+  min-width: 1000px;
+  color: #191b26;
+  border-radius: 10px;
+}
+
+.img-gallary {
+  max-width: 2000px;
+}
+
+.forum-gallary {
+  max-width: 2000px;
+}
+
+.title-gallary {
+  font-weight: bold;
+  font-size: 14px;
+  margin: 10px 0 0 20px;
+}
+
+.desc-gallary {
+  font-size: 13px;
+  margin: 20px 0 0 20px;
+}
+
+.description {
+  float: left;
+  font-weight: 600;
+  font-size: 14px;
+  margin: 20px 0px 0px 20px;
+  color: #191b26;
+}
+
+.img-single {
+  width: 30%;
+  height: 300px;
+  margin: 20px 0px 0px 20px;
+  background: center;
+  background-size: cover;
+  border-radius: 4px;
+  max-width: 1500px;
+  float: right;
+}
+
 .menu-bar {
   border-top: 1px solid #f0f1f4;
   background: #f5f6f7;
