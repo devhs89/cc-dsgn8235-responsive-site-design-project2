@@ -721,9 +721,17 @@
   width: 100%;
 }
 
-.col {
-  flex: 0 0 auto;
-  width: 100%;
+.col > img{
+  flex: 33%;
+  max-width: 33%;
+}
+
+.col-2{
+  flex: 50%;
+  max-width: 50%;
+  border-style: ridge;
+  border-radius: 20px;
+  column-gap: 30px;
 }
 
 /*!
