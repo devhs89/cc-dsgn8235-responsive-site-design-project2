@@ -6,7 +6,7 @@ VERSION: 0.2
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Account Login - PicFree</title>
+  <title>Account - PicFree</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap"
@@ -42,9 +42,39 @@ VERSION: 0.2
 </nav>
 <!--Main Content-->
 <main>
-  <div class="container my-6">
+  <div class="container my-6" id="registartion">
+    <h1 class="pageTittleHeading mb-4">Registration</h1>
+    <small>&#40; If you already registred <a href="#login">Click Here</a> &#41;</small>
+    <hr class="mb-4">
+    <!--Add Content Here-->
+    <div class="mb-6 contactFormContainer">
+      <!-- <div class="mb-3 col"><h1>Registration</h1></div> -->
+      <form action="contact.html" method="post" class="row">
+        <div class="mb-3 col col-lg">
+          <label for="clientName" class="form-label">User Name *</label>
+          <input type="text" name="clientName" id="clientName" class="form-control" pattern="[A-Za-z0-9]+" required>
+        </div>
+        <div class="mb-3 col col-lg">
+          <label for="clientEmail" class="form-label">Email *</label>
+          <input type="email" name="clientEmail" id="clientEmail" class="form-control" required>
+        </div>
+        <div class="mb-3 col">
+          <label for="clientSubject" class="form-label">Enter Password *</label>
+          <input type="password" name="clientSubject" id="clientSubject" class="form-control" required>
+        </div>
+        <div class="mb-3 col">
+          <label for="clientMessage" class="form-label">ReEnter the Password *</label>
+          <input type="text" name="clientSubject" id="clientSubject" class="form-control" required>
+        </div>
+        <div class="w-100">
+          <button type="submit" class="btn btn-primary">Register</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="container my-6" id="login">
     <h1 class="pageTittleHeading mb-4">Login</h1>
-    <small> &#40; If you are not registered, <a href="registration.html" class="link-primary">click here</a> to create
+    <small> &#40; If you are not registered, <a href="#registartion" class="link-primary">click here</a> to create
       an account.&#41;</small>
     <hr class="mb-4">
     <div class="mb-6 contactFormContainer">
