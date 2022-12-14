@@ -1,6 +1,6 @@
 <!--
 CREATED BY: Vinay Kumar Reddy Janumpally
-VERSION: 0.1
+VERSION: 0.2
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -34,7 +34,7 @@ VERSION: 0.1
           <a href="contact.html" class="nav-link">Contact</a>
         </li>
         <li class="nav-list-item">
-          <a href="account.html" class="nav-link">Sign In</a>
+          <a href="account.html" class="nav-link">Account</a>
         </li>
       </ul>
     </div>
@@ -42,9 +42,58 @@ VERSION: 0.1
 </nav>
 <!--Main Content-->
 <main>
-  <div class="container my-6">
-    <h1 class="pageTittleHeading mb-4">Account</h1>
+  <div class="container my-6" id="registartion">
+    <h1 class="pageTittleHeading mb-4">Registration</h1>
+    <small>&#40; If you already registred <a href="#login">Click Here</a> &#41;</small>
     <hr class="mb-4">
+    <!--Add Content Here-->
+    <div class="mb-6 contactFormContainer">
+      <!-- <div class="mb-3 col"><h1>Registration</h1></div> -->
+      <form action="contact.html" method="post" class="row">
+        <div class="mb-3 col col-lg">
+          <label for="clientName" class="form-label">User Name *</label>
+          <input type="text" name="clientName" id="clientName" class="form-control" pattern="[A-Za-z0-9]+" required>
+        </div>
+        <div class="mb-3 col col-lg">
+          <label for="clientEmail" class="form-label">Email *</label>
+          <input type="email" name="clientEmail" id="clientEmail" class="form-control" required>
+        </div>
+        <div class="mb-3 col">
+          <label for="clientSubject" class="form-label">Enter Password *</label>
+          <input type="password" name="clientSubject" id="clientSubject" class="form-control" required>
+        </div>
+        <div class="mb-3 col">
+          <label for="clientMessage" class="form-label">ReEnter the Password *</label>
+          <input type="text" name="clientSubject" id="clientSubject" class="form-control" required>
+        </div>
+        <div class="w-100">
+          <button type="submit" class="btn btn-primary">Register</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="container my-6" id="login">
+    <h1 class="pageTittleHeading mb-4">Login</h1>
+    <small> &#40; If you are not registered, <a href="#registartion" class="link-primary">click here</a> to create
+      an account.&#41;</small>
+    <hr class="mb-4">
+    <div class="mb-6 contactFormContainer">
+      <form action="index.html" method="post" class="row">
+        <div class="mb-3 col col-lg">
+          <label for="emailAddr" class="form-label">Email *</label>
+          <input type="email" name="emailAddr" id="emailAddr" class="form-control" placeholder="e.g. name@email.com"
+                 required>
+        </div>
+        <div class="mb-3 col col-lg">
+          <label for="passWord" class="form-label">Password *</label>
+          <input type="password" name="passWord" id="passWord" class="form-control"
+                 pattern="[A-Za-z0-9\$\-\_\*\@]{8,}" placeholder="A-Z a-z 0-9 $-_*@ and at least 8 chars long" required>
+        </div>
+        <div class="w-100">
+          <button type="submit" class="btn btn-primary">Log In</button>
+        </div>
+      </form>
+    </div>
   </div>
 </main>
 <!--Footer Content-->
@@ -65,7 +114,7 @@ VERSION: 0.1
       </ul>
     </div>
     <div class="text-center text-faded">
-      <small>&copy; 2022 Harpreet Singh</small>
+      <small>&copy; 2022 Vinay Kumar Reddy Janumpally</small>
     </div>
     <div class="text-center text-faded">
       <small>Inspired by
