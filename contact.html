@@ -1,0 +1,135 @@
+<!--
+CREATED BY: Harpreet Singh
+VERSION: 0.1
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact - PicFree</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+<!--Navigation Bar-->
+<nav class="navBar bg-primary shadow">
+  <div class="container-fluid">
+    <a href="index.html" class="brand-name">
+      <span class="text-capitalize">pic</span><span class="text-uppercase">free</span></a>
+    <div class="nav-links-list-container">
+      <ul class="nav-links-list m-0 p-0">
+        <li class="nav-list-item">
+          <a href="index.html" class="nav-link">Home</a>
+        </li>
+        <li class="nav-list-item">
+          <a href="explore.html" class="nav-link">Explore</a>
+        </li>
+        <li class="nav-list-item">
+          <a href="forum.html" class="nav-link">Forum</a>
+        </li>
+        <li class="nav-list-item">
+          <a href="contact.html" class="nav-link">Contact</a>
+        </li>
+        <li class="nav-list-item">
+          <a href="account.html" class="nav-link">Account</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!--Main Content-->
+<main>
+  <div class="container my-6">
+    <h1 class="pageTittleHeading mb-4">Contact Us</h1>
+    <hr class="mb-4">
+    <div class="mb-6 contactFormContainer">
+      <div class="mb-3 col"><small>All fields are required</small></div>
+      <form action="contact.html" method="post" class="row">
+        <div class="mb-3 col col-lg">
+          <label for="clientName" class="form-label">Full Name *</label>
+          <input type="text" name="clientName" id="clientName" class="form-control" pattern="[A-Za-z0-9]+" required>
+        </div>
+        <div class="mb-3 col col-lg">
+          <label for="clientEmail" class="form-label">Email *</label>
+          <input type="email" name="clientEmail" id="clientEmail" class="form-control" required>
+        </div>
+        <div class="mb-3 col">
+          <label for="clientSubject" class="form-label">Subject *</label>
+          <input type="text" name="clientSubject" id="clientSubject" class="form-control" required>
+        </div>
+        <div class="mb-3 col">
+          <label for="clientMessage" class="form-label">Message *</label>
+          <textarea name="clientMessage" id="clientMessage" class="form-control textarea-form-control"
+                    required></textarea>
+        </div>
+        <div class="w-100">
+          <button type="submit" class="btn btn-primary">Send</button>
+        </div>
+      </form>
+    </div>
+    <h1 class="pageTittleHeading mb-4">About Us</h1>
+    <hr class="mb-4">
+    <div class="row">
+      <div class="col col-lg">
+        <h4 class="mb-1">Group Members</h4>
+        <ul class="text-decoration-none list-style-link fs-2 lh-1 px-5 mt-0 mb-4">
+          <li><a href="https://github.com/devhs89/" class="link-dark fs-1">Harpreet Singh (Project Manager)</a></li>
+          <li><a href="https://github.com/Keyur24121999/" class="link-dark fs-1">Keyur Mansukhbhai Kanani</a></li>
+          <li><a href="https://github.com/rupakreddy11/" class="link-dark fs-1">Pratharan Sai Rupak Reddy Gondi</a></li>
+          <li><a href="https://github.com/Shrutidevani/" class="link-dark fs-1">Shruti Devani</a></li>
+          <li><a href="https://github.com/vinayreddyj/" class="link-dark fs-1">Vinay Kumar Reddy Janumpally</a></li>
+        </ul>
+      </div>
+      <div class="col col-lg">
+        <h4 class="mb-2">Education Institute</h4>
+        <address>
+          <div class="mb-1"><span>Conestoga College (Brantford Campus)</span></div>
+          <div class="icon-text-cols">
+            <div class="svg-icon location-icon"></div>
+            <div>
+              <span>274 Colborne Street,<br>Brantford, Ontario<br>N3T 2H5<br></span>
+            </div>
+            <div class="svg-icon telephone-icon"></div>
+            <div><a href="tel:+12262501772" class="link-dark">
+              <span class="pr-2">(+1) 226 250 1772</span><span>Ext. 7300</span></a>
+            </div>
+          </div>
+        </address>
+      </div>
+    </div>
+  </div>
+</main>
+<!--Footer Content-->
+<footer class="page-footer bg-dark">
+  <div class="container">
+    <div class="row gap-1 mb-5">
+      <a href="index.html" class="brand-name col">
+        <span class="text-capitalize">pic</span><span class="text-uppercase">free</span></a>
+      <small class="col">One of the biggest collection of images!</small>
+    </div>
+    <div class="text-center mb-5">
+      <ul class="footer-links-list m-0 p-0">
+        <li><a href="index.html" class="link-light">Home</a></li>
+        <li><a href="explore.html" class="link-light">Explore</a></li>
+        <li><a href="forum.html" class="link-light">Forum</a></li>
+        <li><a href="account.html" class="link-light">Account</a></li>
+        <li><a href="contact.html" class="link-light">Contact</a></li>
+      </ul>
+    </div>
+    <div class="text-center text-faded">
+      <small>&copy; 2022 Harpreet Singh</small>
+    </div>
+    <div class="text-center text-faded">
+      <small>Inspired by
+        <a href="https://pixabay.com/" target="_blank" class="link-credits" referrerpolicy="no-referrer">Pixabay</a> &
+        <a href="https://getbootstrap.com/" target="_blank" class="link-credits"
+           referrerpolicy="no-referrer">Bootstrap</a>
+      </small>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
