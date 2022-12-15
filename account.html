@@ -44,27 +44,30 @@ VERSION: 0.2
 <main>
   <div class="container my-6" id="registartion">
     <h1 class="pageTittleHeading mb-4">Registration</h1>
-    <small>&#40; If you already registred <a href="#login">Click Here</a> &#41;</small>
+    <small>If you already registered, <a href="#login" class="link-primary">click here</a> to login.</small>
     <hr class="mb-4">
     <!--Add Content Here-->
     <div class="mb-6 contactFormContainer">
-      <!-- <div class="mb-3 col"><h1>Registration</h1></div> -->
       <form action="contact.html" method="post" class="row">
         <div class="mb-3 col col-lg">
-          <label for="clientName" class="form-label">User Name *</label>
-          <input type="text" name="clientName" id="clientName" class="form-control" pattern="[A-Za-z0-9]+" required>
+          <label for="clientName" class="form-label">Full Name *</label>
+          <input type="text" name="clientName" id="clientName" class="form-control" pattern="[A-Za-z0-9]+"
+                 placeholder="e.g. John Doe" required>
         </div>
         <div class="mb-3 col col-lg">
           <label for="clientEmail" class="form-label">Email *</label>
-          <input type="email" name="clientEmail" id="clientEmail" class="form-control" required>
+          <input type="email" name="clientEmail" id="clientEmail" class="form-control" placeholder="e.g. name@email.com"
+                 required>
         </div>
-        <div class="mb-3 col">
-          <label for="clientSubject" class="form-label">Enter Password *</label>
-          <input type="password" name="clientSubject" id="clientSubject" class="form-control" required>
+        <div class="mb-3 col col-lg">
+          <label for="clientPassword" class="form-label">Password *</label>
+          <input type="password" name="clientSubject" id="clientPassword" class="form-control"
+                 placeholder="Must be at least 8 chars" required>
         </div>
-        <div class="mb-3 col">
-          <label for="clientMessage" class="form-label">ReEnter the Password *</label>
-          <input type="text" name="clientSubject" id="clientSubject" class="form-control" required>
+        <div class="mb-3 col col-lg">
+          <label for="clientRepeatPass" class="form-label">Confirm Password *</label>
+          <input type="text" name="clientRepeatPass" id="clientRepeatPass" class="form-control"
+                 placeholder="Must match password" required>
         </div>
         <div class="w-100">
           <button type="submit" class="btn btn-primary">Register</button>
@@ -74,8 +77,7 @@ VERSION: 0.2
   </div>
   <div class="container my-6" id="login">
     <h1 class="pageTittleHeading mb-4">Login</h1>
-    <small> &#40; If you are not registered, <a href="#registartion" class="link-primary">click here</a> to create
-      an account.&#41;</small>
+    <small>If you are not registered, <a href="#registartion" class="link-primary">click here</a> to create an account.</small>
     <hr class="mb-4">
     <div class="mb-6 contactFormContainer">
       <form action="index.html" method="post" class="row">
